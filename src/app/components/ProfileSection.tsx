@@ -7,36 +7,24 @@ const UB = { fontFamily: "'Ubuntu', sans-serif" } as const;
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const SKILLS = [
-  { category: '開発', tags: ['TypeScript', 'React', 'Node.js', 'Astro', 'Python', 'PostgreSQL'] },
-  { category: 'デザイン', tags: ['UI/UX', 'Figma', 'イラスト', 'コンセプトアート', 'タイポグラフィ'] },
-  { category: '言語', tags: ['日本語', '英語', 'フランス語（基礎）'] },
-  { category: 'ツール', tags: ['Git', 'Docker', 'Supabase', 'AWS', 'Vercel'] },
+  { category: '開発', tags: ['TypeScript', 'React', 'Node.js', 'Next.js', 'Vue.js', 'Nuxt.js', 'Python', 'Liquid'] },
+  { category: 'デザイン', tags: ['UI/UX', 'Figma', 'イラスト', 'コンセプトアート', 'タイポグラフィ', 'バナー作成', 'LPデザイン'] },
+  { category: '言語', tags: ['日本語', '英語(基礎)'] },
+  { category: 'ツール', tags: ['Git', 'Docker', 'Shopify', 'FutureShop', 'Supabase', 'AWS', 'GCP', '各種生成AI'] },
 ];
 
 const TIMELINE = [
   {
-    period: '2023年〜現在',
-    role: 'フルスタック開発者・デザイナー',
-    place: 'フリーランス / 独立',
-    desc: 'Webアプリ・クリエイティブツール・ナラティブデザインを手がけています。システム開発とイラスト・TRPGシナリオ執筆を融合させた制作活動を続けています。',
-  },
-  {
-    period: '2022〜2023年',
+    period: '2024年〜現在',
     role: 'フロントエンドエンジニア',
-    place: 'テックスタートアップ（リモート）',
-    desc: 'ReactベースのダッシュボードやコンポーネントライブラリをO開発。エンジニアリングチーム全体のDX改善とCI/CDパイプラインの保守を担当。',
+    place: '企業所属',
+    desc: 'Webサービス開発だけでなく、社内ツールの開発・運用や業務改善・自動化も担当。また、ShopifyやFutureShopを活用したECサイトの構築・運用が最近の主な業務です。',
   },
   {
-    period: '2021〜2022年',
-    role: 'Webデザイナー・開発者',
-    place: 'クリエイティブエージェンシー',
-    desc: '国内外のクリエイティブブランド向けにマーケティングサイトやインタラクティブな体験をデザイン・実装。',
-  },
-  {
-    period: '2019〜2021年',
+    period: '2019〜2023年',
     role: '情報工学専攻',
-    place: '大学',
-    desc: 'ソフトウェア工学・アルゴリズム・データベース・ヒューマンコンピュータインタラクションを専攻。優秀な成績で卒業。',
+    place: '工業高等専門学校',
+    desc: '学科では情報工学・電気工学を学び、独学と研究ではUIUXデザインやフロントエンド開発を中心に学びました。',
   },
 ];
 
@@ -51,10 +39,11 @@ export function ProfileSection() {
         {/* 自己紹介 */}
         <FadeIn direction="left" className="mb-16 border-l-4 border-[#0022ff] pl-8 max-w-3xl">
           <p className="text-[#0022ff] text-lg leading-relaxed" style={{ ...UB, fontWeight: 300 }}>
-            はじめまして、<strong style={{ fontWeight: 500 }}>Michotaku</strong> です。日本在住のWeb開発者・イラストレーター・ナラティブデザイナーです。Webサービスを作りながら、TRPG用シナリオも制作しています。コードとアートが交わる場所に魅力を感じ、テクノロジーと創造性を融合させた表現を探求しています。
+            はじめまして、<strong style={{ fontWeight: 500 }}>Micho</strong> です。日本在住のフロントエンドエンジニア・イラストレーター・デザイナーです。普段は業務でフロントエンドエンジニアをしながら、TRPG用シナリオも制作しています。<br />Webサービス・ツールの開発とクリエイティブ制作、EC開発・運用、ナレーションや製品紹介のプレゼンまで幅広く対応しております。
+            <br />最近は生成AIのプロンプト改善や業務改善・自動化に力を入れています。
           </p>
           <p className="text-[#0022ff] text-lg leading-relaxed mt-4 opacity-70" style={{ ...UB, fontWeight: 300 }}>
-            世界中のフリーランス案件を受け付けています · クリエイティブなコラボレーションも歓迎。
+            フリーランス案件を受け付けています · クリエイティブなコラボレーションも大歓迎です！
           </p>
           <div className="flex gap-4 mt-6">
             {['Twitter / X', 'LitLink', 'GitHub'].map((link) => (

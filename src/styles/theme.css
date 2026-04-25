@@ -178,4 +178,9 @@
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
   }
+
+  ::selection {
+    background-color: #0022ff; /* 好きな背景色（ハイライト色）に変えてね */
+    color: #ffffff;
+  }
 }
