@@ -57,9 +57,9 @@ export const WORKS: Work[] = [
     id: 2,
     slug: 'kimi-to-zirconia',
     thumbnail:
-      'https://images.unsplash.com/photo-1711319551836-f7ca9764a898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1lJTIwVFJQRyUyMGZhbnRhc3klMjBzY2VuZSUyMGlsbHVzdHJhdGlvbnxlbnwxfHx8fDE3NzcxMDQzMDd8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      'https://booth.pximg.net/cfbbcbb5-7f34-449e-bcc0-a03395ec4855/i/5776786/05322517-7500-4e8b-b5d8-e7681e19133b_base_resized.jpg',
     heroImage:
-      'https://images.unsplash.com/photo-1711319551836-f7ca9764a898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1lJTIwVFJQRyUyMGZhbnRhc3klMjBzY2VuZSUyMGlsbHVzdHJhdGlvbnxlbnwxfHx8fDE3NzcxMDQzMDd8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      'https://booth.pximg.net/cfbbcbb5-7f34-449e-bcc0-a03395ec4855/i/5776786/05322517-7500-4e8b-b5d8-e7681e19133b_base_resized.jpg',
     tags: [{ label: 'CoC' }, { label: '短時間' }],
     title: '君とジルコニア',
     titleJa: '君とジルコニア',
@@ -76,8 +76,8 @@ export const WORKS: Work[] = [
     },
     tools: ['Notion', 'Canva', 'Clip Studio Paint'],
     gallery: [
-      'https://images.unsplash.com/photo-1711319551836-f7ca9764a898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1lJTIwVFJQRyUyMGZhbnRhc3klMjBzY2VuZSUyMGlsbHVzdHJhdGlvbnxlbnwxfHx8fDE3NzcxMDQzMDd8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      'https://images.unsplash.com/photo-1746017217171-76b8683fbc65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW50YXN5JTIwZm9yZXN0JTIwbWFnaWMlMjBsaWdodCUyMGlsbHVzdHJhdGlvbnxlbnwxfHx8fDE3NzcxMDc4MzN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      'https://booth.pximg.net/cfbbcbb5-7f34-449e-bcc0-a03395ec4855/i/5776786/8c559e98-3ba6-46f4-933d-7b3cfd636717_base_resized.jpg',
+      'https://booth.pximg.net/cfbbcbb5-7f34-449e-bcc0-a03395ec4855/i/5776786/72be043c-4eb6-43ef-874f-dbe0a46fba24_base_resized.jpg',
     ],
   },
   {
@@ -108,26 +108,6 @@ export const WORKS: Work[] = [
   },
   {
     id: 4,
-    slug: 'shiki-meguri-no-hyaku',
-    thumbnail:
-      'https://images.unsplash.com/photo-1653368653487-f55b96d90853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmltZSUyMGNoYXJhY3RlciUyMGlsbHVzdHJhdGlvbiUyMGRpZ2l0YWwlMjBhcnR8ZW58MXx8fHwxNzc3MDk4ODA2fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    heroImage:
-      'https://images.unsplash.com/photo-1653368653487-f55b96d90853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmltZSUyMGNoYXJhY3RlciUyMGlsbHVzdHJhdGlvbiUyMGRpZ2l0YWwlMjBhcnR8ZW58MXx8fHwxNzc3MDk4ODA2fDA&ixlib=rb-4.1.0&q=80&w=1080',
-    tags: [{ label: 'イラスト' }, { label: 'オリジナル' }],
-    title: '四季巡りの百',
-    category: 'Artwork',
-    year: '2023',
-    medium: 'デジタルイラスト（Clip Studio Paint）',
-    description:
-      '春夏秋冬の四季をテーマにしたオリジナルキャラクターのイラストシリーズ。「百（もも）」というキャラクターが四季の情景の中に佇む、静謐でノスタルジックな作品群です。和の色彩と現代的なイラストタッチを組み合わせています。',
-    tools: ['Clip Studio Paint', 'Procreate', 'Adobe Photoshop'],
-    gallery: [
-      'https://images.unsplash.com/photo-1653368653487-f55b96d90853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmltZSUyMGNoYXJhY3RlciUyMGlsbHVzdHJhdGlvbiUyMGRpZ2l0YWwlMjBhcnR8ZW58MXx8fHwxNzc3MDk4ODA2fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      'https://images.unsplash.com/photo-1746017217171-76b8683fbc65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW50YXN5JTIwZm9yZXN0JTIwbWFnaWMlMjBsaWdodCUyMGlsbHVzdHJhdGlvbnxlbnwxfHx8fDE3NzcxMDc4MzN8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    ],
-  },
-  {
-    id: 5,
     slug: 'portfolio-site-v2',
     thumbnail:
       'https://images.unsplash.com/photo-1573867639040-6dd25fa5f597?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ24lMjBVSSUyMHdpcmVmcmFtZSUyMGRlc2t0b3B8ZW58MXx8fHwxNzc3MTA0MzAxfDA&ixlib=rb-4.1.0&q=80&w=1080',
