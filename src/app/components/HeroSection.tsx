@@ -62,7 +62,7 @@ export function HeroSection({ onNavClick }: HeroSectionProps) {
               fontSize: 'clamp(3.5rem, 9vw, 7.5rem)',
             }}
           >
-            Michotaku
+            Micho Portfolio
           </h1>
         </motion.div>
 

@@ -27,9 +27,9 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ['日常'],
     excerpt: 'Twitterとかの卓報告とかシナリオ進捗とか投げるアカウントの諸々はここに投げます。',
     thumbnail:
-      'https://images.unsplash.com/photo-1653368653487-f55b96d90853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmltZSUyMGNoYXJhY3RlciUyMGlsbHVzdHJhdGlvbiUyMGRpZ2l0YWwlMjBhcnR8ZW58MXx8fHwxNzc3MDk4ODA2fDA&ixlib=rb-4.1.0&q=80&w=400',
+      'https://pbs.twimg.com/media/HHi_VN_bMAAiEFm?format=png&name=360x360',
     heroImage:
-      'https://images.unsplash.com/photo-1653368653487-f55b96d90853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmltZSUyMGNoYXJhY3RlciUyMGlsbHVzdHJhdGlvbiUyMGRpZ2l0YWwlMjBhcnR8ZW58MXx8fHwxNzc3MDk4ODA2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      'https://pbs.twimg.com/media/HHi_VN_bMAAiEFm?format=png&name=360x360',
     content: [
       {
         type: 'paragraph',
