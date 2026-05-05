@@ -120,7 +120,7 @@ function Footer() {
           className="inline-block border border-white text-white px-10 py-4 text-base transition-none"
           style={UB}
         >
-          contact@michotaku.dev
+          kumicho.trpg@gmail.com
         </motion.a>
         <motion.div
           initial={{ opacity: 0 }}
@@ -163,7 +163,6 @@ export default function HomePage() {
       <HeroSection onNavClick={scrollTo} />
       <ProfileSection />
       <WorksSection />
-      <SystemPortfolioSection />
       <BlogSection />
       <Footer />
     </div>
