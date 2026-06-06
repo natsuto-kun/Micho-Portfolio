@@ -1,12 +1,13 @@
+import { Link } from 'react-router';
 import { motion } from 'motion/react';
 import { NetworkCanvas } from './NetworkCanvas';
 
-const NAV_LINKS = [
-  { label: 'プロフィール', id: 'profile' },
+const NAV_LINKS: { label: string; id: string; path?: string }[] = [
+  { label: 'プロフィール', id: 'profile',   path: '/profile' },
   { label: 'シナリオ',     id: 'scenario' },
-  { label: '作品',         id: 'works' },
-  { label: 'ポートフォリオ', id: 'portfolio' },
-  { label: 'ブログ',       id: 'blog' },
+  { label: '作品',         id: 'works',     path: '/works' },
+  { label: 'ポートフォリオ', id: 'portfolio', path: '/portfolio' },
+  { label: 'ブログ',       id: 'blog',      path: '/blog' },
 ];
 
 const UB = { fontFamily: "'MOBO', sans-serif" } as const;
@@ -29,20 +30,38 @@ export function HeroSection({ onNavClick }: HeroSectionProps) {
         <div />
 
         <nav className="flex flex-col items-end gap-2">
-          {NAV_LINKS.map((link, i) => (
-            <motion.button
-              key={link.id}
-              onClick={() => onNavClick(link.id)}
-              initial={{ opacity: 0, x: 18 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, ease: EASE, delay: 0.1 + i * 0.07 }}
-              whileHover={{ opacity: 0.45, x: -3 }}
-              className="text-[#0022ff] text-base transition-none text-right leading-snug tracking-wide"
-              style={{ ...UB, fontWeight: 400 }}
-            >
-              {link.label}
-            </motion.button>
-          ))}
+          {NAV_LINKS.map((link, i) =>
+            link.path ? (
+              <motion.div
+                key={link.id}
+                initial={{ opacity: 0, x: 18 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, ease: EASE, delay: 0.1 + i * 0.07 }}
+                whileHover={{ opacity: 0.45, x: -3 }}
+              >
+                <Link
+                  to={link.path}
+                  className="text-[#0022ff] text-base text-right leading-snug tracking-wide block"
+                  style={{ ...UB, fontWeight: 400 }}
+                >
+                  {link.label}
+                </Link>
+              </motion.div>
+            ) : (
+              <motion.button
+                key={link.id}
+                onClick={() => onNavClick(link.id)}
+                initial={{ opacity: 0, x: 18 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, ease: EASE, delay: 0.1 + i * 0.07 }}
+                whileHover={{ opacity: 0.45, x: -3 }}
+                className="text-[#0022ff] text-base transition-none text-right leading-snug tracking-wide"
+                style={{ ...UB, fontWeight: 400 }}
+              >
+                {link.label}
+              </motion.button>
+            )
+          )}
         </nav>
       </div>
 

@@ -25,6 +25,8 @@ export interface Work {
   medium?: string;
   // Additional images for gallery
   gallery?: string[];
+  // External link (Booth, Pixiv, site URL, etc.)
+  link?: string;
 }
 
 export const WORKS: Work[] = [
@@ -52,6 +54,7 @@ export const WORKS: Work[] = [
       'https://images.unsplash.com/photo-1677396105034-06ba797233bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqZWxseWZpc2glMjB1bmRlcndhdGVyJTIwYmx1ZXxlbnwxfHx8fDE3NzcwOTc4MDl8MA&ixlib=rb-4.1.0&q=80&w=1080',
       'https://images.unsplash.com/photo-1591771245255-ab5ba6016648?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW50YXN5JTIwbmlnaHQlMjBvY2VhbiUyMGdsb3dpbmclMjBqZWxseWZpc2glMjBkYXJrfGVufDF8fHx8MTc3NzEwNzgzM3ww&ixlib=rb-4.1.0&q=80&w=1080',
     ],
+    link: 'https://zenrataku.booth.pm/items/6189077',
   },
   {
     id: 2,
@@ -79,6 +82,7 @@ export const WORKS: Work[] = [
       'https://booth.pximg.net/cfbbcbb5-7f34-449e-bcc0-a03395ec4855/i/5776786/8c559e98-3ba6-46f4-933d-7b3cfd636717_base_resized.jpg',
       'https://booth.pximg.net/cfbbcbb5-7f34-449e-bcc0-a03395ec4855/i/5776786/72be043c-4eb6-43ef-874f-dbe0a46fba24_base_resized.jpg',
     ],
+    link: 'https://zenrataku.booth.pm/items/5776786',
   },
   {
     id: 3,
@@ -104,6 +108,96 @@ export const WORKS: Work[] = [
     gallery: [
       'https://pbs.twimg.com/media/HHi_VODbMAA6PLv?format=png&name=900x900',
       'https://pbs.twimg.com/media/HHi_VN_bMAAiEFm?format=png&name=360x360',
+    ],
+    link: 'https://booth.pm/',
+  },
+  {
+    id: 4,
+    slug: 'post-senpan',
+    thumbnail:
+      'https://pbs.twimg.com/media/HKKFn-Ra0AAjBUx?format=jpg&name=large',
+    heroImage:
+      'https://pbs.twimg.com/media/HKKFn-Ra0AAjBUx?format=jpg&name=large',
+    tags: [{ label: 'Web' }, { label: 'LP' }],
+    title: '海外メディアに声を届けよう',
+    category: 'Web',
+    year: '2026',
+    description:
+      '昨今の日本の情勢を受けて制作したサイトです。海外メディアへのアクションのハードルを下げるためのものになります。',
+    tableInfo: {
+      type: '個人制作',
+      distribution: 'LP',
+    },
+    tools: ['React', 'Figma'],
+    link: 'https://post-senpan.vercel.app/',
+  },
+  {
+    id: 5,
+    slug: 'oo-fism',
+    thumbnail:
+      'https://i.pinimg.com/736x/15/5a/0f/155a0fc794a78f87d352e332f08fcce8.jpg',
+    heroImage:
+      'https://i.pinimg.com/736x/15/5a/0f/155a0fc794a78f87d352e332f08fcce8.jpg',
+    tags: [{ label: 'Artwork' }, { label: 'Pinterest' }],
+    title: 'Pinterestクリップシリーズ',
+    category: 'Artwork',
+    year: '2026',
+    description:
+      '習作用でしたが折角なのでという事でまとめた、Pinterestのクリップ集です。',
+    tableInfo: {
+      type: '個人制作',
+      distribution: 'Pinterest',
+    },
+    tools: ['Figma'],
+    link: 'https://pin.it/79HXB63tZ',
+  },
+  {
+    id: 6,
+    slug: 'coc-amusment-park',
+    thumbnail:
+      'https://pbs.twimg.com/media/HKKJQe9bcAAOSq1?format=jpg&name=large',
+    heroImage:
+      'https://pbs.twimg.com/media/HKKJQe9bcAAOSq1?format=jpg&name=large',
+    tags: [{ label: 'Web' }, { label: 'CoC' }],
+    title: '友人制作のCoCシナリオ特設サイト',
+    category: 'Web',
+    year: '2026',
+    description:
+      '本文が出来ていないらしいので正式リリースはまだですが、友人が制作しているCoCシナリオの特設サイトを制作中です。シナリオの世界観に合わせたデザインと、シナリオの魅力を引き出すレイアウトを心がけています。',
+    tableInfo: {
+      system: 'クトゥルフ神話TRPG（旧・新版）',
+      players: '未定',
+      duration: '未定',
+      type: 'わちゃわちゃ系シナリオ',
+      distribution: '未定',
+    },
+    tools: ['Figma', 'React', 'Tailwind CSS'],
+    link: 'https://cocamusementpark-ep1d.vercel.app/',
+  },
+  {
+    id: 7,
+    slug: 'scenario-trailer',
+    thumbnail:
+      'https://pbs.twimg.com/media/GTCKagRbQAAC7yR?format=jpg&name=large',
+    heroImage:
+      'https://pbs.twimg.com/media/GTCKagRbQAAC7yR?format=jpg&name=large',
+    tags: [{ label: 'Artwork' }, { label: 'CoC' }],
+    title: '未完成シナリオのトレーラーデザイン集',
+    category: 'Artwork',
+    year: '2024~2025',
+    description:
+      '本文が完成しなかったり、完成しても公開されなかったりしたシナリオのトレーラーをデザインしてまとめたものです。要望など頂ければ執筆を続けるかもしれません。',
+    tableInfo: {
+      system: 'クトゥルフ神話TRPG（旧・新版）, エモクロア',
+      distribution: 'Booth',
+    },
+    tools: ['Figma', 'Canva'],
+    gallery: [
+      'https://pbs.twimg.com/media/GTCKagRbQAAC7yR?format=jpg&name=large',
+      'https://pbs.twimg.com/media/GRR33owbUAAl4_x?format=jpg&name=medium',
+      'https://pbs.twimg.com/media/GRR36E9aUAAnY89?format=jpg&name=medium',
+      'https://pbs.twimg.com/media/GQkFmtgakAU5efA?format=jpg&name=4096x4096',
+      'https://pbs.twimg.com/media/GetIZqdbsAAYXYW?format=jpg&name=large',
     ],
   },
 ];

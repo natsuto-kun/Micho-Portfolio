@@ -1,17 +1,19 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router';
 import { motion } from 'motion/react';
 import { HeroSection } from '../components/HeroSection';
 import { ProfileSection } from '../components/ProfileSection';
+import { SOCIAL_LINKS } from '../data/social';
 import { WorksSection } from '../components/WorksSection';
 import { SystemPortfolioSection } from '../components/SystemPortfolioSection';
 import { BlogSection } from '../components/BlogSection';
 
-const NAV_LINKS = [
-  { label: 'プロフィール', id: 'profile' },
+const NAV_LINKS: { label: string; id: string; path?: string }[] = [
+  { label: 'プロフィール', id: 'profile',   path: '/profile' },
   { label: 'シナリオ',     id: 'scenario' },
-  { label: '作品',         id: 'works' },
-  { label: 'ポートフォリオ', id: 'portfolio' },
-  { label: 'ブログ',       id: 'blog' },
+  { label: '作品',         id: 'works',     path: '/works' },
+  { label: 'ポートフォリオ', id: 'portfolio', path: '/portfolio' },
+  { label: 'ブログ',       id: 'blog',      path: '/blog' },
 ];
 
 const UB = { fontFamily: "'MOBO', sans-serif" } as const;
@@ -45,16 +47,27 @@ function StickyNav({ onNavClick }: { onNavClick: (id: string) => void }) {
       </button>
 
       <div className="hidden md:flex items-center gap-7">
-        {NAV_LINKS.map((link) => (
-          <button
-            key={link.id}
-            onClick={() => onNavClick(link.id)}
-            className="text-[#0022ff] text-sm hover:opacity-50 transition-opacity"
-            style={UB}
-          >
-            {link.label}
-          </button>
-        ))}
+        {NAV_LINKS.map((link) =>
+          link.path ? (
+            <Link
+              key={link.id}
+              to={link.path}
+              className="text-[#0022ff] text-sm hover:opacity-50 transition-opacity"
+              style={UB}
+            >
+              {link.label}
+            </Link>
+          ) : (
+            <button
+              key={link.id}
+              onClick={() => onNavClick(link.id)}
+              className="text-[#0022ff] text-sm hover:opacity-50 transition-opacity"
+              style={UB}
+            >
+              {link.label}
+            </button>
+          )
+        )}
       </div>
 
       <div className="flex items-center bg-white rounded-full shadow-[0px_1px_8px_0px_rgba(0,0,0,0.18)] px-2 py-1.5 gap-1">
@@ -129,21 +142,23 @@ function Footer() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="flex justify-center gap-6 mt-10"
         >
-          {['Twitter / X', 'LitLink', 'GitHub', 'Pixiv'].map((s) => (
+          {SOCIAL_LINKS.map((s) => (
             <motion.a
-              key={s}
-              href="#"
+              key={s.label}
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ opacity: 1, y: -2 }}
               transition={{ duration: 0.15 }}
               className="text-white/50 text-sm"
               style={{ ...UB, fontWeight: 300 }}
             >
-              {s}
+              {s.label}
             </motion.a>
           ))}
         </motion.div>
         <p className="text-white/30 text-xs mt-16" style={{ ...UB, fontWeight: 300 }}>
-          © 2024 Michotaku. 無断転載禁止。
+          © 2026 Micho Portfolio. 無断転載禁止。
         </p>
       </div>
     </footer>
@@ -163,6 +178,7 @@ export default function HomePage() {
       <HeroSection onNavClick={scrollTo} />
       <ProfileSection />
       <WorksSection />
+      <SystemPortfolioSection />
       <BlogSection />
       <Footer />
     </div>
