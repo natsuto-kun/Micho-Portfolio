@@ -291,7 +291,7 @@ export default function WorkDetailPage() {
                   className="border border-[#0022ff] bg-[#0022ff] text-white text-sm px-6 py-4 text-center flex items-center justify-center gap-3"
                   style={UB}
                 >
-                  {work.category === 'Scenario' ? 'Boothで見る' : work.category === 'Web' ? 'サイトを見る' : 'Pixivで見る'}
+                  {work.category === 'Scenario' ? 'Boothで見る' : work.category === 'Web' ? 'サイトを見る' : 'サイトで見る'}
                   <ArrowRight size={14} />
                 </motion.a>
               )}

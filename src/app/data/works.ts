@@ -111,6 +111,95 @@ export const WORKS: Work[] = [
     ],
     link: 'https://booth.pm/',
   },
+  {
+    id: 4,
+    slug: 'post-senpan',
+    thumbnail:
+      'https://pbs.twimg.com/media/HKKFn-Ra0AAjBUx?format=jpg&name=large',
+    heroImage:
+      'https://pbs.twimg.com/media/HKKFn-Ra0AAjBUx?format=jpg&name=large',
+    tags: [{ label: 'Web' }, { label: 'LP' }],
+    title: '海外メディアに声を届けよう',
+    category: 'Web',
+    year: '2026',
+    description:
+      '昨今の日本の情勢を受けて制作したサイトです。海外メディアへのアクションのハードルを下げるためのものになります。',
+    tableInfo: {
+      type: '個人制作',
+      distribution: 'LP',
+    },
+    tools: ['React', 'Figma'],
+    link: 'https://post-senpan.vercel.app/',
+  },
+  {
+    id: 5,
+    slug: 'oo-fism',
+    thumbnail:
+      'https://i.pinimg.com/736x/15/5a/0f/155a0fc794a78f87d352e332f08fcce8.jpg',
+    heroImage:
+      'https://i.pinimg.com/736x/15/5a/0f/155a0fc794a78f87d352e332f08fcce8.jpg',
+    tags: [{ label: 'Artwork' }, { label: 'Pinterest' }],
+    title: 'Pinterestクリップシリーズ',
+    category: 'Artwork',
+    year: '2026',
+    description:
+      '習作用でしたが折角なのでという事でまとめた、Pinterestのクリップ集です。',
+    tableInfo: {
+      type: '個人制作',
+      distribution: 'Pinterest',
+    },
+    tools: ['Figma'],
+    link: 'https://pin.it/79HXB63tZ',
+  },
+  {
+    id: 6,
+    slug: 'coc-amusment-park',
+    thumbnail:
+      'https://pbs.twimg.com/media/HKKJQe9bcAAOSq1?format=jpg&name=large',
+    heroImage:
+      'https://pbs.twimg.com/media/HKKJQe9bcAAOSq1?format=jpg&name=large',
+    tags: [{ label: 'Web' }, { label: 'CoC' }],
+    title: '友人制作のCoCシナリオ特設サイト',
+    category: 'Web',
+    year: '2026',
+    description:
+      '本文が出来ていないらしいので正式リリースはまだですが、友人が制作しているCoCシナリオの特設サイトを制作中です。シナリオの世界観に合わせたデザインと、シナリオの魅力を引き出すレイアウトを心がけています。',
+    tableInfo: {
+      system: 'クトゥルフ神話TRPG（旧・新版）',
+      players: '未定',
+      duration: '未定',
+      type: 'わちゃわちゃ系シナリオ',
+      distribution: '未定',
+    },
+    tools: ['Figma', 'React', 'Tailwind CSS'],
+    link: 'https://cocamusementpark-ep1d.vercel.app/',
+  },
+  {
+    id: 7,
+    slug: 'scenario-trailer',
+    thumbnail:
+      'https://pbs.twimg.com/media/GTCKagRbQAAC7yR?format=jpg&name=large',
+    heroImage:
+      'https://pbs.twimg.com/media/GTCKagRbQAAC7yR?format=jpg&name=large',
+    tags: [{ label: 'Artwork' }, { label: 'CoC' }],
+    title: '未完成シナリオのトレーラーデザイン集',
+    category: 'Artwork',
+    year: '2024~2025',
+    description:
+      '本文が完成しなかったり、完成しても公開されなかったりしたシナリオのトレーラーをデザインしてまとめたものです。要望など頂ければ執筆を続けるかもしれません。',
+    tableInfo: {
+      system: 'クトゥルフ神話TRPG（旧・新版）, エモクロア',
+      distribution: 'Booth',
+    },
+    tools: ['Figma', 'Canva'],
+    gallery: [
+      'https://pbs.twimg.com/media/GTCKagRbQAAC7yR?format=jpg&name=large',
+      'https://pbs.twimg.com/media/GRR33owbUAAl4_x?format=jpg&name=medium',
+      'https://pbs.twimg.com/media/GRR36E9aUAAnY89?format=jpg&name=medium',
+      'https://pbs.twimg.com/media/GQkFmtgakAU5efA?format=jpg&name=4096x4096',
+      'https://pbs.twimg.com/media/GetIZqdbsAAYXYW?format=jpg&name=large',
+    ],
+  },
 ];
 
 export function getWorkById(id: string): Work | undefined {
