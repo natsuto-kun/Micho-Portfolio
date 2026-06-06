@@ -3,7 +3,7 @@ import { GridBackgroundSVG } from './GridBackground';
 import { SectionHeader } from './SectionHeader';
 import { FadeIn, StaggerGrid, StaggerItem } from './Animate';
 
-const UB = { fontFamily: "'Ubuntu', sans-serif" } as const;
+const UB = { fontFamily: "'MOBO', sans-serif" } as const;
 
 /* ───────────────────────── アーキテクチャ図 ─────────────────────────────── */
 
@@ -19,11 +19,11 @@ function ArchDiagramAlpha() {
       <line x1="92"  y1="110" x2="124" y2="110" stroke="#0022ff" strokeWidth="0.8"/>
       <line x1="92"  y1="110" x2="124" y2="180" stroke="#0022ff" strokeWidth="0.8"/>
       <line x1="196" y1="110" x2="228" y2="110" stroke="#0022ff" strokeWidth="0.8"/>
-      <text x="56"  y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">クライアント</text>
-      <text x="160" y="45"  textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">認証</text>
-      <text x="160" y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">API</text>
-      <text x="160" y="185" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">キュー</text>
-      <text x="264" y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">DB</text>
+      <text x="56"  y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">クライアント</text>
+      <text x="160" y="45"  textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">認証</text>
+      <text x="160" y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">API</text>
+      <text x="160" y="185" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">キュー</text>
+      <text x="264" y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">DB</text>
     </svg>
   );
 }
@@ -40,11 +40,11 @@ function ArchDiagramBeta() {
       <line x1="160" y1="50"  x2="240" y2="90"  stroke="#0022ff" strokeWidth="0.8"/>
       <line x1="80"  y1="130" x2="80"  y2="168" stroke="#0022ff" strokeWidth="0.8"/>
       <line x1="240" y1="130" x2="240" y2="168" stroke="#0022ff" strokeWidth="0.8"/>
-      <text x="160" y="34"  textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">CDN</text>
-      <text x="80"  y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">フロント</text>
-      <text x="240" y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">CMS API</text>
-      <text x="80"  y="193" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">ストレージ</text>
-      <text x="240" y="193" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">PostgreSQL</text>
+      <text x="160" y="34"  textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">CDN</text>
+      <text x="80"  y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">フロント</text>
+      <text x="240" y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">CMS API</text>
+      <text x="80"  y="193" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">ストレージ</text>
+      <text x="240" y="193" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">PostgreSQL</text>
     </svg>
   );
 }
@@ -61,11 +61,11 @@ function ArchDiagramGamma() {
       <line x1="170" y1="110" x2="190" y2="110" stroke="#0022ff" strokeWidth="0.8"/>
       <line x1="135" y1="130" x2="135" y2="168" stroke="#0022ff" strokeWidth="0.8"/>
       <line x1="225" y1="90"  x2="225" y2="52"  stroke="#0022ff" strokeWidth="0.8"/>
-      <text x="45"  y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">ソース</text>
-      <text x="135" y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">変換</text>
-      <text x="225" y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">分析</text>
-      <text x="135" y="193" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">データレイク</text>
-      <text x="225" y="37"  textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="Ubuntu,sans-serif">ダッシュボード</text>
+      <text x="45"  y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">ソース</text>
+      <text x="135" y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">変換</text>
+      <text x="225" y="115" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">分析</text>
+      <text x="135" y="193" textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">データレイク</text>
+      <text x="225" y="37"  textAnchor="middle" fill="#0022ff" fontSize="9" fontFamily="MOBO,sans-serif">ダッシュボード</text>
     </svg>
   );
 }

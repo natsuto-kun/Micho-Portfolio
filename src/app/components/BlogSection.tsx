@@ -5,7 +5,7 @@ import { SectionHeader } from './SectionHeader';
 import { StaggerGrid, StaggerItem, FadeIn } from './Animate';
 import { BLOG_POSTS } from '../data/blog';
 
-const UB = { fontFamily: "'Ubuntu', sans-serif" } as const;
+const UB = { fontFamily: "'MOBO', sans-serif" } as const;
 
 /* ─── ブログ記事リストアイテム ───────────────────────────────────────────── */
 function BlogPostItem({ id, date, title, tags, excerpt, thumbnail }: (typeof BLOG_POSTS)[number]) {

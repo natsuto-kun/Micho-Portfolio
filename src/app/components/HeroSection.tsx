@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { label: 'ブログ',       id: 'blog' },
 ];
 
-const UB = { fontFamily: "'Ubuntu', sans-serif" } as const;
+const UB = { fontFamily: "'MOBO', sans-serif" } as const;
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 interface HeroSectionProps {

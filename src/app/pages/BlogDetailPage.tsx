@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import { BLOG_POSTS, getBlogPostById, type BlogBlock } from '../data/blog';
 import { GridBackgroundSVG } from '../components/GridBackground';
 
-const UB = { fontFamily: "'Ubuntu', sans-serif" } as const;
+const UB = { fontFamily: "'MOBO', sans-serif" } as const;
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 /* ─── 詳細ページ ナビゲーションバー ─────────────────────────────────────── */

@@ -6,7 +6,7 @@ import { SectionHeader } from './SectionHeader';
 import { StaggerGrid, StaggerItem, FadeIn } from './Animate';
 import { WORKS } from '../data/works';
 
-const UB = { fontFamily: "'Ubuntu', sans-serif" } as const;
+const UB = { fontFamily: "'MOBO', sans-serif" } as const;
 
 const CATEGORIES = [
   { label: 'すべて',       value: 'All' },

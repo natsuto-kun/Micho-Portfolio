@@ -3,7 +3,7 @@ import { GridBackgroundSVG } from './GridBackground';
 import { SectionHeader } from './SectionHeader';
 import { FadeIn, StaggerGrid, StaggerItem, HoverCard } from './Animate';
 
-const UB = { fontFamily: "'Ubuntu', sans-serif" } as const;
+const UB = { fontFamily: "'MOBO', sans-serif" } as const;
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const SKILLS = [
