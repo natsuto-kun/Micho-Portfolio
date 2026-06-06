@@ -22,7 +22,7 @@ export function SectionHeader({ title, id }: SectionHeaderProps) {
         <h2
           className="text-[#0022ff] leading-none not-italic"
           style={{
-            fontFamily: "'Ubuntu', sans-serif",
+            fontFamily: "'MOBO', sans-serif",
             fontWeight: 400,
             fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
           }}

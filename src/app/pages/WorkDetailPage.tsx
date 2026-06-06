@@ -6,7 +6,7 @@ import { GridBackgroundSVG } from '../components/GridBackground';
 import { NetworkCanvas } from '../components/NetworkCanvas';
 import { StaggerGrid, StaggerItem, FadeIn } from '../components/Animate';
 
-const UB = { fontFamily: "'Ubuntu', sans-serif" } as const;
+const UB = { fontFamily: "'MOBO', sans-serif" } as const;
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 /* ─── 詳細ページ ナビゲーションバー ─────────────────────────────────────── */

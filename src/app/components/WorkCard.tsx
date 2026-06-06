@@ -36,7 +36,7 @@ export function WorkCard({ thumbnail, tags, title, href = '#' }: WorkCardProps) 
           <span
             key={tag.label}
             className="bg-[#0022ff] text-white px-3 py-1 text-xs"
-            style={{ fontFamily: "'Ubuntu', sans-serif" }}
+            style={{ fontFamily: "'MOBO', sans-serif" }}
           >
             {tag.label}
           </span>
@@ -46,7 +46,7 @@ export function WorkCard({ thumbnail, tags, title, href = '#' }: WorkCardProps) 
       {/* Title */}
       <p
         className="mx-4 mt-3 mb-6 text-[#0022ff] text-sm"
-        style={{ fontFamily: "'Ubuntu', sans-serif", fontWeight: 300 }}
+        style={{ fontFamily: "'MOBO', sans-serif", fontWeight: 300 }}
       >
         {title}
       </p>
@@ -56,7 +56,7 @@ export function WorkCard({ thumbnail, tags, title, href = '#' }: WorkCardProps) 
         <a
           href={href}
           className="text-[#0022ff] text-sm tracking-widest flex items-center gap-3"
-          style={{ fontFamily: "'Ubuntu', sans-serif" }}
+          style={{ fontFamily: "'MOBO', sans-serif" }}
         >
           MORE
           <svg width="50" height="10" viewBox="0 0 50 10" fill="none">

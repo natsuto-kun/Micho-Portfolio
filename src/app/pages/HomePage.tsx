@@ -14,7 +14,7 @@ const NAV_LINKS = [
   { label: 'ブログ',       id: 'blog' },
 ];
 
-const UB = { fontFamily: "'Ubuntu', sans-serif" } as const;
+const UB = { fontFamily: "'MOBO', sans-serif" } as const;
 
 /* ─── スティッキーナビ ────────────────────────────────────────────────────── */
 function StickyNav({ onNavClick }: { onNavClick: (id: string) => void }) {
