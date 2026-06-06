@@ -210,7 +210,7 @@ export default function BlogDetailPage() {
         <div className="relative z-10 mt-8 flex justify-center">
           <motion.div whileHover={{ y: -2 }} transition={{ duration: 0.18 }}>
             <Link
-              to="/#blog"
+              to="/blog"
               className="border border-[#0022ff] text-[#0022ff] px-8 py-3 text-sm hover:bg-[#0022ff] hover:text-white transition-colors flex items-center gap-3"
               style={UB}
             >

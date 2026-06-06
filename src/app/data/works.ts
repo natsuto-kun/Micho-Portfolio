@@ -25,6 +25,8 @@ export interface Work {
   medium?: string;
   // Additional images for gallery
   gallery?: string[];
+  // External link (Booth, Pixiv, site URL, etc.)
+  link?: string;
 }
 
 export const WORKS: Work[] = [
@@ -52,6 +54,7 @@ export const WORKS: Work[] = [
       'https://images.unsplash.com/photo-1677396105034-06ba797233bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxqZWxseWZpc2glMjB1bmRlcndhdGVyJTIwYmx1ZXxlbnwxfHx8fDE3NzcwOTc4MDl8MA&ixlib=rb-4.1.0&q=80&w=1080',
       'https://images.unsplash.com/photo-1591771245255-ab5ba6016648?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW50YXN5JTIwbmlnaHQlMjBvY2VhbiUyMGdsb3dpbmclMjBqZWxseWZpc2glMjBkYXJrfGVufDF8fHx8MTc3NzEwNzgzM3ww&ixlib=rb-4.1.0&q=80&w=1080',
     ],
+    link: 'https://zenrataku.booth.pm/items/6189077',
   },
   {
     id: 2,
@@ -79,6 +82,7 @@ export const WORKS: Work[] = [
       'https://booth.pximg.net/cfbbcbb5-7f34-449e-bcc0-a03395ec4855/i/5776786/8c559e98-3ba6-46f4-933d-7b3cfd636717_base_resized.jpg',
       'https://booth.pximg.net/cfbbcbb5-7f34-449e-bcc0-a03395ec4855/i/5776786/72be043c-4eb6-43ef-874f-dbe0a46fba24_base_resized.jpg',
     ],
+    link: 'https://zenrataku.booth.pm/items/5776786',
   },
   {
     id: 3,
@@ -105,6 +109,7 @@ export const WORKS: Work[] = [
       'https://pbs.twimg.com/media/HHi_VODbMAA6PLv?format=png&name=900x900',
       'https://pbs.twimg.com/media/HHi_VN_bMAAiEFm?format=png&name=360x360',
     ],
+    link: 'https://booth.pm/',
   },
 ];
 

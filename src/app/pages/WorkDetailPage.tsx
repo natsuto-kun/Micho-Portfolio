@@ -281,16 +281,20 @@ export default function WorkDetailPage() {
                 </motion.div>
               )}
 
-              <motion.a
-                href="#"
-                whileHover={{ opacity: 0.88, y: -2 }}
-                transition={{ duration: 0.18 }}
-                className="border border-[#0022ff] bg-[#0022ff] text-white text-sm px-6 py-4 text-center flex items-center justify-center gap-3"
-                style={UB}
-              >
-                {work.category === 'Scenario' ? 'Boothで見る' : work.category === 'Web' ? 'サイトを見る' : 'Pixivで見る'}
-                <ArrowRight size={14} />
-              </motion.a>
+              {work.link && (
+                <motion.a
+                  href={work.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ opacity: 0.88, y: -2 }}
+                  transition={{ duration: 0.18 }}
+                  className="border border-[#0022ff] bg-[#0022ff] text-white text-sm px-6 py-4 text-center flex items-center justify-center gap-3"
+                  style={UB}
+                >
+                  {work.category === 'Scenario' ? 'Boothで見る' : work.category === 'Web' ? 'サイトを見る' : 'Pixivで見る'}
+                  <ArrowRight size={14} />
+                </motion.a>
+              )}
             </FadeIn>
           </div>
 
@@ -346,7 +350,7 @@ export default function WorkDetailPage() {
           <div className="mt-12 flex justify-center">
             <motion.div whileHover={{ y: -2 }} transition={{ duration: 0.18 }}>
               <Link
-                to="/#works"
+                to="/works"
                 className="border border-[#0022ff] text-[#0022ff] px-8 py-3 text-sm hover:bg-[#0022ff] hover:text-white transition-colors flex items-center gap-3"
                 style={UB}
               >

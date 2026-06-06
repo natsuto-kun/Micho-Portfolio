@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { GridBackgroundSVG } from './GridBackground';
 import { SectionHeader } from './SectionHeader';
 import { FadeIn, StaggerGrid, StaggerItem, HoverCard } from './Animate';
+import { SOCIAL_LINKS } from '../data/social';
 
 const UB = { fontFamily: "'MOBO', sans-serif" } as const;
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -46,16 +47,18 @@ export function ProfileSection() {
             フリーランス案件を受け付けています · クリエイティブなコラボレーションも大歓迎です！
           </p>
           <div className="flex gap-4 mt-6">
-            {['Twitter / X', 'LitLink', 'GitHub'].map((link) => (
+            {SOCIAL_LINKS.filter((s) => s.label !== 'Pixiv').map((link) => (
               <motion.a
-                key={link}
-                href="#"
+                key={link.label}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ backgroundColor: '#0022ff', color: '#fff' }}
                 transition={{ duration: 0.18 }}
                 className="border border-[#0022ff] px-4 py-1 text-sm text-[#0022ff]"
                 style={UB}
               >
-                {link}
+                {link.label}
               </motion.a>
             ))}
           </div>

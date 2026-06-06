@@ -106,7 +106,7 @@ export function BlogSection() {
         <FadeIn direction="up" delay={0.1} className="mt-10 flex justify-end">
           <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
             <Link
-              to="/blog/1"
+              to="/blog"
               className="border border-[#0022ff] text-[#0022ff] px-8 py-3 text-sm hover:bg-[#0022ff] hover:text-white transition-colors flex items-center gap-3"
               style={UB}
             >
